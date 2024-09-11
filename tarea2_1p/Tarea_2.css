@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Celeste claro */
+}
+
+h1, h2 {
+    color: #0277bd; /* Azul oscuro */
+}
+
+.datos-personales, .estudios, .experiencia, .capacitaciones, .referencias {
+    background: #fff;
+    border: 2px solid #0288d1; /* Azul más claro para los bordes */
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-imagen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 1;
+}
+
+.imagen {
+    flex: 0 0 150px;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #0288d1; /* Borde azul alrededor de la foto */
+}
+
+.estudios ul, .experiencia ul, .capacitaciones ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.capacitaciones ul {
+    list-style-type: square;
+}
+
+.capacitaciones li {
+    margin: 5px 0;
+}
+
+.referencias {
+    padding: 0;
+    border: none; /* Elimina el borde para la tabla */
+}
+
+.referencias table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #0288d1; /* Borde azul alrededor de la tabla */
+}
+
+.referencias th, .referencias td {
+    border: 1px solid #0288d1; /* Borde azul para las celdas */
+    padding: 8px;
+    text-align: left;
+}
+
+.referencias th {
+    background-color: #b3e5fc; /* Azul claro para el fondo de los encabezados */
+    color: #0277bd;
+}

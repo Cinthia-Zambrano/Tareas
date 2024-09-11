@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida Personal</title>
+    <link rel="stylesheet" href="Tarea_2.css">
+</head>
+<body>
+    <div class="datos-personales">
+        <h1>Datos Personales</h1>
+        <div class="info-imagen">
+            <div class="info">
+                <p><strong>Nombres:</strong> Cinthia Dayana</p>
+                <p><strong>Apellidos:</strong> Zambrano Gavilanes</p>
+                <p><strong>Cédula:</strong> 1312554564</p>
+                <p><strong>Nacionalidad:</strong> Ecuatoriana</p>
+                <p><strong>Estado Civil:</strong> Soltera</p>
+                <p><strong>Teléfono:</strong> 0962709873</p>
+                <p><strong>Correo Electrónico:</strong> dayana123@gmail.com</p>
+            </div>
+            <div class="imagen">
+                <img src="foto.jpg" alt="Foto Personal" class="foto">
+            </div>
+        </div>
+    </div>
+    <div class="estudios">
+        <h2>Estudios Realizados</h2>
+        <ul>
+            <li>[Tercer Nivel: Universidad Laica Eloy Alfaro de Manabi]</li>
+            <li>[Secundaria: Colegio Nacional Pedro Balda Cucalon]</li>
+        </ul>
+    </div>
+    <div class="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>
+                <strong>Asistente de Contador</strong> - [CONT CIA. LTA] <br>
+                <em>[02/2020 – 06/2021]</em>
+                <ul>
+                    <li>Apoyo en la preparación y revisión de informes.</li>
+                    <li>Registro de facturas en el sistema.</li>
+                    <li>Gestión y manejo de archivos.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Atención al Cliente</strong> - [LuxeLiving] <br>
+                <em>[10/2019 – Actualidad]</em>
+                <ul>
+                    <li>Atención personalizada a los clientes, resolviendo consultas.</li>
+                    <li>Gestión de solicitudes de productos y servicios.</li>
+                    <li>Brindar información sobre productos, promociones y servicios.</li>
+                    <li>Manejo de sistemas de gestión de clientes para registrar consultas y seguimientos.</li>
+                    <li>Fomento de la satisfacción y retención de clientes a través de un excelente servicio.</li>
+                    <li>Trabajo en equipo para alcanzar el objetivo de satisfacción del cliente.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Asesor de Ventas de Productos Tecnológicos</strong> - [TechWorld] <br>
+                <em>[05/2020 – 10/2022]</em>
+                <ul>
+                    <li>Atención al cliente y asesoramiento en la compra de productos tecnológicos.</li>
+                    <li>Demostración de características y beneficios de los productos.</li>
+                    <li>Gestión de inventarios y actualización de existencias.</li>
+                    <li>Resolución de consultas relacionadas con los productos.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="capacitaciones">
+        <h2>Capacitaciones</h2>
+        <ul>
+            <li>Desarrollo de Talento Humano</li>
+            <li>Atención al Cliente</li>
+            <li>Seguridad Informática</li>
+            <li>Bases de Datos Relacionales y No Relacionales</li>
+            <li>Inteligencia Artificial y Machine Learning</li>
+        </ul>
+    </div>
+    <div class="referencias">
+        <h2>Referencias Personales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cargo/Profesión</th>
+                    <th>Teléfono</th>
+                    <th>Correo Electrónico</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[Dr. Roberto Chalen]</td>
+                    <td>[Gerente de ventas]</td>
+                    <td>[0963654374]</td>
+                    <td>[rcc11@gmail.com]</td>
+                </tr>
+                <tr>
+                    <td>[Ing. Victor Alvarez]</td>
+                    <td>[Gerente General y Jefe Técnico]</td>
+                    <td>[0983465975]</td>
+                    <td>[victor.9@gmail.com]</td>
+                </tr>
+                <tr>
+                    <td>[Lic. Cristhoper Alarcon]</td>
+                    <td>[Asesor Contable]</td>
+                    <td>[0985675432]</td>
+                    <td>[cris_as@gmail.com]</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
