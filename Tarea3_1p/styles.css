@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c7f8e1; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #73ffa2; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000; /* Lila oscuro para el título */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000; 
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #00ff2a; 
+    border-radius: 4px;
+    background-color: #ffffff; 
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #8be783;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff2a; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0fa13b; 
+}
+
+.container {
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none; 
+}
+
+#successMessage {
+    color: green;
+    font-size: 14px;
+    display: none; 
+}
