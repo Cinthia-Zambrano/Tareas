@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con bucle</title>
+</head>
+<body>
+
+    <h1>Operaciones con dos números</h1>
+
+    <script type="text/javascript">
+        // Ingreso de los dos números
+        var num1 = parseFloat(prompt("Introduce el primer número:"));
+        var num2 = parseFloat(prompt("Introduce el segundo número:"));
+
+        // Bucle de 5 iteraciones
+        for (var i = 1; i <= 5; i++) {
+            if (i === 1) {
+                // Primera iteración: Suma
+                var suma = num1 + num2;
+                alert("Iteración 1: La suma de " + num1 + " y " + num2 + " es " + suma);
+            } else if (i === 2) {
+                // Segunda iteración: Resta
+                var resta = num1 - num2;
+                alert("Iteración 2: La resta de " + num1 + " y " + num2 + " es " + resta);
+            } else if (i === 3) {
+                // Tercera iteración: Multiplicación
+                var multiplicacion = num1 * num2;
+                alert("Iteración 3: La multiplicación de " + num1 + " y " + num2 + " es " + multiplicacion);
+            } else if (i === 4) {
+                // Cuarta iteración: División
+                if (num2 !== 0) {
+                    var division = num1 / num2;
+                    alert("Iteración 4: La división de " + num1 + " entre " + num2 + " es " + division);
+                } else {
+                    alert("Iteración 4: No se puede dividir entre 0");
+                }
+            } else if (i === 5) {
+                // Quinta iteración: Módulo
+                if (num2 !== 0) {
+                    var modulo = num1 % num2;
+                    alert("Iteración 5: El módulo de " + num1 + " y " + num2 + " es " + modulo);
+                } else {
+                    alert("Iteración 5: No se puede calcular el módulo con divisor 0");
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
