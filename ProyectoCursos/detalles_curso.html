@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Curso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Estilos para el botón de reportar fallo */
+        #reportar-fallo {
+            position: fixed; /* Fija el botón en la esquina */
+            bottom: 10px; /* Distancia desde el fondo */
+            right: 10px; /* Distancia desde la derecha */
+            padding: 5px 10px; /* Tamaño del botón */
+            font-size: 14px; /* Tamaño de la fuente */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Detalles del Curso</h1>
+    </header>
+    <main>
+        <div id="curso-info">
+            <!-- Información del curso se mostrará aquí -->
+            <h2 id="curso-nombre"></h2>
+            <p id="curso-nivel"></p>
+            <p id="curso-duracion"></p>
+            <p id="curso-precio"></p>
+            <button id="inscribirse-btn" onclick="inscribir()">Inscribirse</button>
+            <!-- El botón de reportar fallo se moverá a la esquina inferior -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Plataforma de Capacitación</p>
+    </footer>
+    <button id="reportar-fallo" onclick="reportarFallo()">Reportar fallo</button> <!-- Botón movido fuera de la div principal -->
+    <script>
+        // Simulando detalles del curso, puedes adaptar esto según tu lógica
+        const cursosDetalles = {
+            "curso1.1": {
+                nombre: "HTML para Principiantes",
+                nivel: "Principiante",
+                duracion: "10 horas",
+                precio: "Gratis"
+            },
+            "curso1.2": {
+                nombre: "CSS Avanzado",
+                nivel: "Intermedio",
+                duracion: "20 horas",
+                precio: "$50"
+            },
+            "curso1.3": {
+                nombre: "JavaScript desde Cero",
+                nivel: "Avanzado",
+                duracion: "30 horas",
+                precio: "$100"
+            },
+            // Agrega más cursos según sea necesario
+        };
+
+        // Obtener el curso seleccionado (se puede enviar a través de URL o localStorage)
+        const cursoSeleccionado = localStorage.getItem('cursoSeleccionado');
+
+        // Mostrar detalles del curso
+        const mostrarDetallesCurso = (curso) => {
+            const detalles = cursosDetalles[curso];
+            if (detalles) {
+                document.getElementById('curso-nombre').textContent = detalles.nombre;
+                document.getElementById('curso-nivel').textContent = `Nivel: ${detalles.nivel}`;
+                document.getElementById('curso-duracion').textContent = `Duración: ${detalles.duracion}`;
+                document.getElementById('curso-precio').textContent = `Precio: ${detalles.precio}`;
+            }
+        };
+
+        // Contador para la inscripción
+        let inscripcionContador = 0;
+
+        // Función para inscribirse
+        function inscribir() {
+            inscripcionContador++;
+            const mensaje = inscripcionContador % 2 !== 0 ? "¡Felicidades, ve a por ello!" : "Error de inscripción";
+            alert(mensaje); // Muestra el mensaje en una ventana emergente
+        }
+
+        // Función para reportar fallo
+        function reportarFallo() {
+            alert("Reporte enviado");
+        }
+
+        // Ejecutar al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            mostrarDetallesCurso(cursoSeleccionado);
+        });
+    </script>
+</body>
+</html>
+
+

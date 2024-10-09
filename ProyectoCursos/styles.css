@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro para la aplicación */
+    color: #333; /* Color de texto */
+}
+
+header {
+    background-color: #e1f0ff; /* Fondo del header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #5af3cd; /* Color para los encabezados */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5af3cd; /* Color de los botones de navegación */
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #14a384; /* Color al pasar el mouse */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff; /* Fondo blanco para las secciones */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para las secciones */
+}
+
+input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc; /* Bordes de los campos de texto */
+    border-radius: 5px;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    background-color: #5af3cd; /* Color de los botones */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #14a384; /* Color al pasar el mouse sobre los botones */
+}
+
+.hero-title {
+    font-size: 6em; /* Tamaño más grande para el título */
+    text-align: center; /* Centrando el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.hero-description, .hero-subdescription {
+    font-size: 1.5em; /* Tamaño del texto */
+    text-align: center; /* Centrando el texto */
+    margin: 10px 0; /* Espaciado vertical */
+}
+
+.images {
+    display: flex;
+    justify-content: space-around; /* Distribuye las imágenes en el espacio */
+    margin-top: 40px;
+    padding: 20px 0; /* Espacio adicional arriba y abajo */
+}
+
+.image-container {
+    flex: 1; /* Cada imagen ocupará un espacio igual */
+    max-width: 300px; /* Limita el ancho máximo de las imágenes */
+    margin: 0 10px; /* Margen entre las imágenes */
+}
+
+.images img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.sugerencias-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.curso {
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #ccc; /* Borde alrededor de cada curso */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+    max-width: 200px; /* Limita el ancho máximo de los cursos */
+}
+
+.curso img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.categorias {
+    margin: 20px;
+}
+
+.categoria {
+    margin-bottom: 40px; /* Espacio entre categorías */
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los cursos */
+}
+
+.explorar-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5af3cd; /* Color del botón */
+    color: #030303; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.explorar-button:hover {
+    background-color: #14a384; /* Color al pasar el mouse */
+}
+
+.categorias-container {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre las categorías */
+    flex-wrap: wrap; /* Permite que las categorías se ajusten en múltiples líneas si es necesario */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.categoria {
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde de las categorías */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.categoria:hover {
+    background-color: #e1f0ff; /* Color al pasar el mouse sobre la categoría */
+}
+
+.cursos-container {
+    margin-top: 20px; /* Espacio superior para los cursos */
+}
+
+.cursos {
+    display: none; /* Inicialmente oculta los cursos */
+}
+
+.oculto {
+    display: none; /* Clase para ocultar elementos */
+}
+
+#detalle-curso {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+

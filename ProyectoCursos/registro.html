@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - CapacitaT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Registro en CapacitaT</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="registro-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required>
+            
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required>
+            
+            <button type="submit">Crear Cuenta</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById("registro-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío convencional
+
+            // Obtener los datos del formulario
+            const nombre = document.getElementById("nombre").value;
+            const apellido = document.getElementById("apellido").value;
+            const email = document.getElementById("email").value;
+            const contrasena = document.getElementById("contrasena").value;
+
+            // Simular el registro (puedes integrar tu lógica de backend aquí)
+            alert("Registro exitoso. Bienvenido, " + nombre + "!");
+
+            // Almacenar datos en localStorage para simular el inicio de sesión
+            localStorage.setItem('nombre', nombre);
+            localStorage.setItem('apellido', apellido);
+            localStorage.setItem('email', email);
+            localStorage.setItem('contrasena', contrasena); // No se recomienda almacenar contraseñas así
+
+            // Redirigir al panel de usuario
+            window.location.href = "panel_usuario.html"; // Cambia esto si el nombre del archivo es diferente
+        });
+    </script>
+</body>
+</html>
+
+

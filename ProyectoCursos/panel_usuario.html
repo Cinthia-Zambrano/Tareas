@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido! Ya puedes acceder a nuestros cursos en "Explorar Cursos"</h1>
+    </header>
+    <main>
+        <section class="sugerencias-cursos">
+            <h2>Sugerencias de Cursos</h2>
+            <div class="curso">
+                <img src="curso1.png" alt="Curso 1">
+                <h3>Curso 1</h3>
+            </div>
+            <div class="curso">
+                <img src="curso2.png" alt="Curso 2">
+                <h3>Curso 2</h3>
+            </div>
+            <div class="curso">
+                <img src="curso3.png" alt="Curso 3">
+                <h3>Curso 3</h3>
+            </div>
+            <div class="curso">
+                <img src="curso4.png" alt="Curso 4">
+                <h3>Curso 4</h3>
+            </div>
+        </section>
+        
+        <div class="explorar">
+            <a href="exploracion_cursos.html" class="explorar-button">Explorar Cursos ➔</a>
+        </div>
+        
+        <div class="perfil-usuario">
+            <h2>Perfil del Usuario</h2>
+            <button onclick="toggleFormulario()">Actualizar Datos</button>
+            <div id="formulario-actualizar" style="display: none;">
+                <h3>Actualizar Información</h3>
+                <form id="update-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" required><br>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" required><br>
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleFormulario() {
+            const formulario = document.getElementById('formulario-actualizar');
+            formulario.style.display = formulario.style.display === 'none' ? 'block' : 'none';
+        }
+
+        document.getElementById("update-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío convencional
+            alert("Datos actualizados exitosamente.");
+            toggleFormulario(); // Cierra el formulario
+        });
+    </script>
+</body>
+</html>
+
+
+
