@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<support-system>
+    <problem-categories>
+        <category>
+            <id>1</id>
+            <name>Problemas Técnicos</name>
+            <description>Problemas con la plataforma o reproducción de cursos</description>
+        </category>
+
+        <category>
+            <id>2</id>
+            <name>Facturación y Pagos</name>
+            <description>Consultas sobre pagos, reembolsos o problemas de facturación</description>
+        </category>
+
+        <category>
+            <id>3</id>
+            <name>Contenido del Curso</name>
+            <description>Dudas sobre el material o contenido de los cursos</description>
+        </category>
+    </problem-categories>
+</support-system>
